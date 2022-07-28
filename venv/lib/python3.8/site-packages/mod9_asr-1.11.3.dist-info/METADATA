@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: mod9-asr
+Version: 1.11.3
+Summary: Mod9 ASR Python SDK, REST API, and Websocket Interface: high-level interfaces to the Mod9 ASR Engine.
+Home-page: https://github.com/mod9-asr/python-sdk
+Author: Mod9 Technologies
+Author-email: support@mod9.com
+License: BSD 2-Clause
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiofiles (>=0.5.0)
+Requires-Dist: boto3 (>=1.9.0)
+Requires-Dist: elasticsearch (>=7.8.1)
+Requires-Dist: flask-restful (>=0.3.9)
+Requires-Dist: google-auth (>=1.22.0)
+Requires-Dist: google-cloud-speech (>=2.0.0)
+Requires-Dist: google-cloud-storage (>=1.30.0)
+Requires-Dist: google-resumable-media (>=1.0.0)
+Requires-Dist: packaging (>=15.0)
+Requires-Dist: proto-plus (>=1.4.0)
+Requires-Dist: websockets (>=8.0)
+
+# Mod9 ASR Python SDK
+
+The *Mod9 ASR Python SDK* is a higher-level interface than the protocol described in the [TCP reference](https://mod9.io/tcp) documentation for the [Mod9 ASR Engine](https://mod9.io).
+This software is designed as a compatible drop-in replacement for:
+
+- [Google Cloud STT Python Client Library](https://cloud.google.com/speech-to-text/docs/libraries#client-libraries-install-python)
+- [Google Cloud STT REST API](https://cloud.google.com/speech-to-text/docs/reference/rest)
+
+Please refer to
+[mod9.io/python](https://mod9.io/python)
+and
+[mod9.io/rest](https://mod9.io/rest)
+for further documentation and examples.
+
+In addition, this package provides a WebSocket interface:
+see [mod9.io/websocket](https://mod9.io/websocket) for a demonstration.
+
+To install the Mod9 ASR Python SDK, if an Internet connection is available:
+```bash
+pip3 install mod9-asr
+```
+
+Alternatively, to install from local source:
+```bash
+tar xzf mod9-asr-$VERSION.tar.gz
+pip3 install ./mod9-asr-$VERSION
+```
+
+
